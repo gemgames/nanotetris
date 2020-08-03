@@ -1,10 +1,10 @@
-# NanoTetris (& other games)
+# NanoTetris 
+
+Tetris in under 3KB!
 
 Inspired by Toledo Chess (of course)
 
-## Tetris
-
-### Color
+## Color
 
 [Color 2.3](/tetris/color/2.3.html) 2728 bytes, +7% *Major Bug Fix, and ES6 backtick use*
 
@@ -18,7 +18,7 @@ Inspired by Toledo Chess (of course)
 
 [Color 0.5](/tetris/color/0.5.html) 3085 bytes *Alpha*
 
-### No Color
+## No Color
 
 [No Color 2.2](/tetris/nocolor/2.2.html) 2598 bytes, +6% *Major Bug Fix, and ES6 backtick use*
 
@@ -31,9 +31,3 @@ Inspired by Toledo Chess (of course)
 [No Color 1.0](/tetris/nocolor/1.0.html) 2968 bytes, -1% *First Release!*
 
 [No Color 0.5](/tetris/nocolor/0.5.html) 2927 bytes *Alpha*
-
-## Chess
-
-[Alpha 0.2](/chess/a0.2.html) 1718 bytes, -3% *Better Collision and move UI*
-
-[Alpha 0.1](/chess/a0.1.html) 1664 bytes 
