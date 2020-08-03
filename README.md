@@ -1,6 +1,4 @@
-# nanotetris
-
-Tetris in under 3 KB!
+# NanoTetris (& other games)
 
 Inspired by Toledo Chess (of course)
 
@@ -21,6 +19,8 @@ Inspired by Toledo Chess (of course)
 [Color 0.5](/tetris/color/0.5.html) 3085 bytes *Alpha*
 
 ### No Color
+
+[No Color 2.2](/tetris/nocolor/2.2.html) 2598 bytes, +6% *Major Bug Fix, and ES6 backtick use*
 
 [No Color 2.2](/tetris/nocolor/2.2.html) 2757 bytes, +5% *Bug Fixes, better variable naming*
 
