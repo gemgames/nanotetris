@@ -6,7 +6,7 @@ Inspired by Toledo Chess (of course)
 
 ## Color
 
-[Color 2.3](/tetris/color/2.3.html) 2728 bytes, +7% *Major Bug Fix, and ES6 backtick use*
+[Color 2.4](/tetris/color/2.4.html) 2728 bytes, +7% *Major Bug Fix, and ES6 backtick use*
 
 [Color 2.2](/tetris/color/2.2.html) 2936 bytes, +3% *Bug Fixes, better variable naming*
 
@@ -20,7 +20,7 @@ Inspired by Toledo Chess (of course)
 
 ## No Color
 
-[No Color 2.2](/tetris/nocolor/2.2.html) 2598 bytes, +6% *Major Bug Fix, and ES6 backtick use*
+[No Color 2.4](/tetris/nocolor/2.4.html) 2598 bytes, +6% *Major Bug Fix, and ES6 backtick use*
 
 [No Color 2.2](/tetris/nocolor/2.2.html) 2757 bytes, +5% *Bug Fixes, better variable naming*
 
