@@ -1,0 +1,272 @@
+<script>
+  var a = "button",
+    b = `<${a} type='${a}' id='`,
+    c = `'></${a}>`,
+    D = "<p id='",
+    d = "style",
+    E = "'></p>",
+    e = ":20px;",
+    f = "<br>",
+    F = [],
+    g = "----",
+    h = [37, 39, 40, 38, 90, 88],
+    H = "background",
+    i,
+    r = p => document.getElementById(p),
+    J,
+    L = [0, 4, 8, 12, 14, 16, 18, 4, 4, 4, 2, 2, 2, 1],
+    k = 0,
+    K = 1,
+    n = [
+      "#9400D3",
+      "orange",
+      "blue",
+      "#32cd32",
+      "red",
+      "#87CEFA",
+      "yellow",
+      "#bd89d3",
+      "#e2c389",
+      "#8989e2",
+      "#9bd19b",
+      "#e28989",
+      "#b8d1e1",
+      "#e2e289",
+      "#d3d3d3"
+    ],
+    O = "32323232",
+    o = `0000111122223344556${O}${O}142`,
+    s = [1, 5, 0, 1, 5, 0, 1, 5, 0],
+    T = [],
+    x = 0;
+  var t =
+    "0125045714561458012401582456047801260147045615781245045801561457047901230145";
+  var u = [],
+    R = 2,
+    U = 0,
+    W = "",
+    X = "New Game";
+  var m = () => {
+    for (i = 0; i < 20; i++) {
+      for (j = 0; j < 19; j++) {
+        u.push(j);
+      }
+    } //make tetris lineup
+    u.sort(() => 0.5 - Math.random()); //randomize tetris lineup
+    s[2] = u[0];
+    s[5] = u[1];
+    s[8] = u[40];
+    F = [];
+  };
+  var G = (W, V) => {
+    r(W).style[H] = n[V];
+  }; //color change
+  var M = W => {
+    document.write(W);
+  }; //write
+  var I = (W, V) => {
+    r(W).innerHTML = V;
+  };
+  var w = (W, V, U, N) => -10 + W * 10 + V - T[U * 4 + N]; //turns x and y into screen placements
+  var C = (Y, X, N) => {
+    G(N === 0 ? Y : "a" + Y, X);
+  }; //change one tile
+  var S = (W, V, U, R) => {
+    for (i = 0; i < 4; i++) {
+      let Q = w(W, V, U, i);
+      if (R < 2) {
+        C(Q, o[U] * 1 + R * 7, 0);
+      } else if (R == 2) {
+        C(Q, 14, 0);
+      } else {
+        C(Q, R == 3 ? o[U] : 14, 1);
+      }
+    }
+  }; //add tetromino
+  //0 = alpha 100
+  //1 = alpha 50
+  //2 = alpha 0
+  //3 = next
+  //4 = hold
+  var y = (W, V, U) =>
+    F.includes(w(W, V, U, 0)) ||
+    F.includes(w(W, V, U, 1)) ||
+    F.includes(w(W, V, U, 2)) ||
+    F.includes(w(W, V, U, 3)); //collision check
+  for (i = 0; i < t.length; i++) {
+    T[i] = [0, 1, 2, 3, 10, 11, 12, 20, 21, 30][t[i]];
+  } //T = Tiles (Uncompressed)
+  M(
+    `<body onkeydown='P(event)'><${d}>${a}{border:0px;${H}:${
+      n[14]
+    };width${e}height${e}} #e{font-size:45px;}</${d}><table><td>`
+  );
+  for (i = 0; i < 20; i++) {
+    for (j = 0; j < 10; j++) {
+      M(b + k + c);
+      k++;
+    }
+    M(f);
+  }
+  k = -1;
+  for (i = 0; i < 4; i++) {
+    for (j = 0; j < 10; j++) {
+      M(D + k + E);
+      k--;
+    }
+  }
+  k = 0;
+  M(
+    `</td><td><p id='e'>TETRIS!</p>By Gem Games (2020)<br>${b}z' style='width:50%;'onclick='b()'>${X}</${a}>${f}Next${g}${g}${g} Hold${f}`
+  );
+  for (i = 0; i < 4; i++) {
+    for (j = 0; j < 10; j++) {
+      M(b + "a" + k + c);
+      k++;
+    }
+    M("<br>");
+  }
+  M("</td></table></body>");
+  g = !1;
+  var b = () => {
+    if (g) {
+      g = !1;
+      for (i = 0; i < 200; i++) {
+        G(i, 14);
+      }
+      for (i = 0; i < 40; i++) {
+        G(`a${i}`, 14);
+      }
+      I("z", X);
+    } else {
+      g = !0;
+      m();
+      I("z", "Start Over");
+    }
+  }; //button.onclick refer,
+  var P = (V, Y) => {
+    if (!g) {
+      return;
+    }
+    var m = z => {
+      if (Y) {
+        return z == 2;
+      } else {
+        return V.keyCode == h[z];
+      }
+    };
+    var N = (z, U, X) => {
+      S(
+        o[s[z]] != 5 ? 3 : 4,
+        o[s[z]] != 5 ? 3 + X : 2 + X,
+        L[o[s[z]]],
+        U
+      );
+    };
+    var v = () => {
+      N(5, 4, 0);
+      K = 1;
+      s[0]--;
+      S(s[0], s[1], s[2], 0);
+      for (i = 0; i < 4; i++) {
+        F.push(w(s[0], s[1], s[2], i));
+      }
+      s[0] = s[3];
+      s[1] = s[4];
+      s[2] = s[5];
+      s[5] = u[R];
+      R = R + 1 == u.length ? 0 : R + 1;
+      N(5, 3, 0);
+      for (j = 0; j < 20; j++) {
+        for (i = 0; i < 10; i++) {
+          if (F.includes(j * 10 + i) == false) {
+            break;
+          }
+        }
+        if (i == 10) {
+          for (i = j; i > 0; i--) {
+            for (U = 0; U < 10; U++) {
+              W = i * 10 + U;
+              r(W).style[H] = r(W - 10).style[H];
+              F[F.indexOf(W)] = W + 10;
+            }
+          }
+        }
+      }
+    };
+    var q = () => {
+      for (i = s[0]; i < 21; i++) {
+        if (y(i, s[1], s[2])) {
+          break;
+        }
+        x = i;
+      }
+    };
+    if (y(1, 6, 17)) {
+      I("e", "Game Over!");
+    }
+    S(s[0], s[1], s[2], 2);
+    S(x, s[1], s[2], 2);
+    if (m(0)) {
+      s[1]--;
+    }
+    if (m(1)) {
+      s[1]++;
+    }
+    if (m(2)) {
+      s[0]++;
+    }
+    if (m(4) && !y(s[0], s[1], s[2] + 1)) {
+      s[2]++;
+      if (s[2] == L[o[s[2]] * 1]) {
+        s[2] = L[o[s[2]] * 1 - 1];
+      }
+    }
+    if (m(5) && K) {
+      K = 0;
+      N(8, 4, 5);
+      s[0] = 1;
+      s[1] = 5;
+      J = s[2];
+      s[2] = s[8];
+      s[8] = J;
+    }
+    if (s[1] == 10 || s[1] == o[s[2] + 19] - 2) {
+      if (m(0) || m(4)) {
+        s[1]++;
+      }
+
+      if (m(1)) {
+        s[1]--;
+      }
+    }
+    if (y(s[0], s[1], s[2])) {
+      if (m(0)) {
+        s[1]++;
+      }
+      if (m(1)) {
+        s[1]--;
+      }
+      if (m(2)) {
+        v();
+      }
+    }
+    if (s[0] == 21 && m(2)) {
+      v();
+    }
+    q();
+    S(i - 1, s[1], s[2], 1);
+    if (m(3)) {
+      s[0] = x + 1;
+      v();
+      q();
+    }
+    S(s[0], s[1], s[2], 0);
+    N(5, 3, 0);
+    N(8, 3, 5);
+  };
+  var v = () => {
+    g ? P(null, 1) : null;
+  };
+  var Z = setInterval(v, 700);
+</script>
