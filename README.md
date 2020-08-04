@@ -6,28 +6,28 @@ Inspired by Toledo Chess (of course)
 
 ## Color
 
-[Color 2.4](/color/2.4.html) 2728 bytes, +7% *Major Bug Fix, and ES6 backtick use*
+[Color 2.4](https://gemgames.github.io/nanotetris/color/2.4.html) 2728 bytes, +7% *Major Bug Fix, and ES6 backtick use* 
 
-[Color 2.2](//olor/2.2.html) 2936 bytes, +3% *Bug Fixes, better variable naming*
+[Color 2.2](https://gemgames.github.io/nanotetris/color/2.2.html) 2936 bytes, +3% *Bug Fixes, better variable naming*
 
-[Color 2.0](/color/2.0.html) 3033 bytes, +5% *New Game/Start Over Button*
+[Color 2.0](https://gemgames.github.io/nanotetris/color/2.0.html) 3033 bytes, +5% *New Game/Start Over Button*
 
-[Color 1.2](/color/1.2.html) 3200 bytes, -3% *Many Bug Fixes*
+[Color 1.2](https://gemgames.github.io/nanotetris/color/1.2.html) 3200 bytes, -3% *Many Bug Fixes*
 
-[Color 1.0](/color/1.0.html) 3112 bytes, -0.9% *First Release!*
+[Color 1.0](https://gemgames.github.io/nanotetris/color/1.0.html) 3112 bytes, -0.9% *First Release!*
 
-[Color 0.5](/color/0.5.html) 3085 bytes *Alpha*
+[Color 0.5](https://gemgames.github.io/nanotetris/color/0.5.html) 3085 bytes *Alpha*
 
 ## No Color
 
-[No Color 2.4](/nocolor/2.4.html) 2598 bytes, +6% *Major Bug Fix, and ES6 backtick use*
+[No Color 2.4](https://gemgames.github.io/nanotetris/nocolor/2.4.html) 2598 bytes, +6% *Major Bug Fix, and ES6 backtick use*
 
-[No Color 2.2](/nocolor/2.2.html) 2757 bytes, +5% *Bug Fixes, better variable naming*
+[No Color 2.2](https://gemgames.github.io/nanotetris/nocolor/2.2.html) 2757 bytes, +5% *Bug Fixes, better variable naming*
 
-[No Color 2.0](/nocolor/2.0.html) 2911 bytes, +5% *New Game/Start Over Button*
+[No Color 2.0](https://gemgames.github.io/nanotetris/nocolor/2.0.html) 2911 bytes, +5% *New Game/Start Over Button*
 
-[No Color 1.2](/nocolor/1.2.html) 3080 bytes, -4% *Many Bug Fixes*
+[No Color 1.2](https://gemgames.github.io/nanotetris/nocolor/1.2.html) 3080 bytes, -4% *Many Bug Fixes*
 
-[No Color 1.0](/nocolor/1.0.html) 2968 bytes, -1% *First Release!*
+[No Color 1.0](https://gemgames.github.io/nanotetris/nocolor/1.0.html) 2968 bytes, -1% *First Release!*
 
-[No Color 0.5](/nocolor/0.5.html) 2927 bytes *Alpha*
+[No Color 0.5](https://gemgames.github.io/nanotetris/nocolor/0.5.html) 2927 bytes *Alpha*
